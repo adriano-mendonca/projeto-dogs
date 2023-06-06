@@ -3,7 +3,7 @@ import {ReactComponent as Enviar} from '../../Assets/enviar.svg'
 import useFetch from '../../Hooks/useFetch'
 import { COMMENT_POST } from "../../api";
 import Error from '../Helper/Error'
-import styles from './PhotosCommentsForm.module.css'
+import styles from './PhotoCommentsForm.module.css'
 
 const PhotoCommentsForm = ({id, setComments}) => {
 
@@ -21,8 +21,6 @@ const PhotoCommentsForm = ({id, setComments}) => {
             
         }
     }
-
-
 
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
